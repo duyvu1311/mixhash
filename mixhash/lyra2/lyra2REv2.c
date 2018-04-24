@@ -39,7 +39,7 @@
 #include "./sha3/sph_bmw.h"
 #include "Lyra2.h"
 
-void lyra2rev2_hash(const char* input, char* output, uint32_t len)
+void lyra2rev2_hash(const char* input, char* output)
 {
 	uint32_t hashA[8], hashB[8];
 
@@ -52,7 +52,7 @@ void lyra2rev2_hash(const char* input, char* output, uint32_t len)
 	sph_blake256_set_rounds(14);
 
 	sph_blake256_init(&ctx_blake);
-	sph_blake256(&ctx_blake, input, len); /* 80 */
+	sph_blake256(&ctx_blake, input, 80); /* 80 */
 	sph_blake256_close(&ctx_blake, hashA);
 
 	sph_keccak256_init(&ctx_keccak);
