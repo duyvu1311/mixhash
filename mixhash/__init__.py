@@ -1,4 +1,4 @@
-import hashlib, qubit_hash, keccak_hash, lyra2re_hash, neoscrypt, x11_hash
+import hashlib, qubit_hash, keccak_hash, lyra2re_hash, lyra2rev2_hash, neoscrypt, x11_hash
 # import lyra2re2_hash
 # import lyra2re_hash
 # import qubit_hash

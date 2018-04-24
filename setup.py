@@ -36,7 +36,7 @@ lyra2re_hash_module = Extension('lyra2re_hash',
 										  'mixhash/sha3/skein.c'],
                                include_dirs=['mixhash/lyra2','mixhash/sha3'])
 
-lyra2re2_hash_module = Extension('lyra2re2_hash',
+lyra2rev2_hash_module = Extension('lyra2rev2_hash',
                                 sources = [
  										  'mixhash/lyra2/lyra2re2module.c',
                                           'mixhash/lyra2/Lyra2RE.c',
@@ -83,5 +83,5 @@ setup (	name = 'mixhash',
 		keywords = ['cryptocurrency', 'coin','bitcoin', 'dash','litecoin', 'scrypt', 'neoscrypt', 'x11', 'qubit', 'skein', 'groestl'],
 		package_dir = {'mixhash': 'mixhash'},
 		py_modules = ['mixhash.__init__'],
-        ext_modules = [ lyra2re_hash_module, lyra2re2_hash_module, qubit_hash_module, keccak_hash_module, neoscrypt_module, x11_hash_module])
+        ext_modules = [ lyra2re_hash_module, lyra2rev2_hash_module, qubit_hash_module, keccak_hash_module, neoscrypt_module, x11_hash_module])
 
