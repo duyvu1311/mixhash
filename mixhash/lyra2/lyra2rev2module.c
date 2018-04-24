@@ -52,6 +52,6 @@ PyMODINIT_FUNC PyInit_lyra2rev2_hash(void) {
 #else
 
 PyMODINIT_FUNC initlyra2rev2_hash(void) {
-    (void) Py_InitModule("mixhash_lyra2rev2", Lyra2REv2Methods);
+    (void) Py_InitModule("lyra2rev2_hash", Lyra2REv2Methods);
 }
 #endif
