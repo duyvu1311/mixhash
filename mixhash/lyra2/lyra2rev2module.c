@@ -31,27 +31,27 @@ static PyObject *lyra2rev2_getpowhash(PyObject *self, PyObject *args)
     return value;
 }
 
-static PyMethodDef Lyra2REv2Methods[] = {
+static PyMethodDef lyra2REv2Methods[] = {
     { "getPoWHash", lyra2rev2_getpowhash, METH_VARARGS, "Returns the proof of work hash using Lyra2REv2 hash" },
     { NULL, NULL, 0, NULL }
 };
 
 #if PY_MAJOR_VERSION >= 3
-static struct PyModuleDef Lyra2REv2Module = {
+static struct PyModuleDef lyra2REv2Module = {
     PyModuleDef_HEAD_INIT,
     "lyra2rev2_hash",
     "...",
     -1,
-    Lyra2REv2Methods
+    lyra2REv2Methods
 };
 
 PyMODINIT_FUNC PyInit_lyra2rev2_hash(void) {
-    return PyModule_Create(&Lyra2REv2Module);
+    return PyModule_Create(&lyra2REv2Module);
 }
 
 #else
 
 PyMODINIT_FUNC initlyra2rev2_hash(void) {
-    (void) Py_InitModule("lyra2rev2_hash", Lyra2REv2Methods);
+    (void) Py_InitModule("lyra2rev2_hash", lyra2REv2Methods);
 }
 #endif
