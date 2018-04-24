@@ -38,7 +38,7 @@ lyra2re_hash_module = Extension('lyra2re_hash',
 
 lyra2rev2_hash_module = Extension('lyra2rev2_hash',
                                 sources = [
- 										  'mixhash/lyra2/lyra2re2module.c',
+ 										  'mixhash/lyra2/lyra2rev2module.c',
                                           'mixhash/lyra2/Lyra2RE.c',
  										  'mixhash/lyra2/Sponge.c',
  										  'mixhash/lyra2/Lyra2.c',
