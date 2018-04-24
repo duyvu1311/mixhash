@@ -49,7 +49,7 @@ void lyra2rev2_hash(const char* input, char* output)
 	sph_skein256_context     ctx_skein;
 	sph_bmw256_context       ctx_bmw;
 
-	sph_blake256_set_rounds(14);
+	//sph_blake256_set_rounds(14);
 
 	sph_blake256_init(&ctx_blake);
 	sph_blake256(&ctx_blake, input, 80); /* 80 */
